@@ -89,11 +89,12 @@ body {
 }
 
 .slide-submenu {
-    background: rgba(0, 0, 0, 0.45);
+    background: #bfe5fb;
     display: inline-block;
     padding: 0 8px;
     border-radius: 4px;
     cursor: pointer;
+    border: 1px solid #203f5e77;
 }
 
 /* Custom CSS to move zoom control to bottom right */
@@ -115,12 +116,12 @@ body {
     /* Add 10px padding around the logo */
 }
 
-.navbar-brand img {
-    height: 80px;
-    /* Set logo height */
-    /* width: auto; */
-    /* Maintain aspect ratio */
-}
+    .navbar-brand img {
+        height: 80px;
+        /* Set logo height */
+        /* width: auto; */
+        /* Maintain aspect ratio */
+    }
 
 
 
@@ -202,12 +203,10 @@ div .mainlogo {
 
 .form-control {
     text-align: end;
-    
 }
 
-.navbar-form{
+.navbar-form {
     text-align: end;
-    
 }
 /* Tab styling */
 .tab {
@@ -217,36 +216,35 @@ div .mainlogo {
     margin-bottom: 10px;
 }
 
-.tab button {
-    flex: 1;
-    background-color: var(--card-bg);
-    /* border: 1px solid var(--primary-color); */
-    border: 1px solid #ddd;
-    border-bottom: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-family: var(--font-primary);
-    font-size: 14px;
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
+    .tab button {
+        flex: 1;
+        background-color: var(--card-bg);
+        /* border: 1px solid var(--primary-color); */
+        border: 1px solid #ddd;
+        border-bottom: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        font-family: var(--font-primary);
+        font-size: 14px;
+        color: var(--text-color);
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-.tab button:hover {
-    /* background-color: var(--primary-color); */
-    background-color:#bfe5fb;
-    color: white;
-    border: 1px solid #203f5e77;
-    
-}
+        .tab button:hover {
+            /* background-color: var(--primary-color); */
+            background-color: #bfe5fb;
+            color: white;
+            border: 1px solid #203f5e77;
+        }
 
-.tab button.active {
-    /* background-color: var(--primary-color); */
-    background-color:#bfe5fb;
-    /* color: white; */
-    color: var(--text-color);
-    font-weight: 200;
-    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
-}
+        .tab button.active {
+            /* background-color: var(--primary-color); */
+            background-color: #bfe5fb;
+            /* color: white; */
+            color: var(--text-color);
+            font-weight: 200;
+            box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+        }
 
 .tabcontent {
     /* display: none;
@@ -262,9 +260,9 @@ div .mainlogo {
     border: 1px solid #ddd;
 }
 
-.tabcontent.active {
-    display: block;
-}
+    .tabcontent.active {
+        display: block;
+    }
 
 .legend-header2 {
     font-size: 18px;
@@ -297,8 +295,6 @@ div .mainlogo {
     color: var(--text-color);
     white-space: nowrap;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
-
-
 }
 
 .navbar-title {
@@ -342,7 +338,6 @@ div .mainlogo {
     text-decoration: none;
     font-weight: bold;
     background: #46911200;
-    
 }
 
 .leaflet-popup-content {
@@ -412,10 +407,11 @@ div .mainlogo {
     flex: 2; /* Allow value column to take more space than caption */
 }
 
-.right-panel-title{
+.right-panel-title {
     font-size: 1.5rem;
     font-weight: 900;
-    color: #4a4a4a;
+    /*color: #4a4a4a;*/
+    color: var(--text-color);
     text-align: center;
     padding: 5px;
     margin: 5px;
@@ -444,7 +440,7 @@ div .mainlogo {
 
 /* Ensure the parent containers have defined heights */
 .panel-collapse.in {
-     max-height: calc(70vh); /* Fill the height of the parent */
+    max-height: calc(70vh); /* Fill the height of the parent */
     display: flex;
     flex-direction: column;
 }
@@ -496,19 +492,18 @@ div .mainlogo {
 /* Responsive Behavior for Smaller Screens */
 @media (max-width: 768px) {
 
-    
+
     body {
         padding-top: 150px; /* Adjust based on collapsed navbar height */
     }
-    
+
     .center-panel {
         /* top: 10%; */
         left: 5%;
         right: 5%;
         bottom: 10%;
-        width:90%
+        width: 90%
     }
-
 }
 
 /*page 2*/
