@@ -48,8 +48,8 @@ body {
 
 .mini-submenu {
     display: none;
-    background-color: rgba(255, 255, 255, 0.46);
-    border: 1px solid rgba(0, 0, 0, 0.9);
+    background-color: #bfe5fb;
+    border: 1px solid #203f5e77;
     border-radius: 4px;
     padding: 9px;
     width: 42px;
@@ -116,12 +116,12 @@ body {
     /* Add 10px padding around the logo */
 }
 
-    .navbar-brand img {
-        height: 80px;
-        /* Set logo height */
-        /* width: auto; */
-        /* Maintain aspect ratio */
-    }
+.navbar-brand img {
+    height: 80px;
+    /* Set logo height */
+    /* width: auto; */
+    /* Maintain aspect ratio */
+}
 
 
 
@@ -208,6 +208,7 @@ div .mainlogo {
 .navbar-form {
     text-align: end;
 }
+
 /* Tab styling */
 .tab {
     display: flex;
@@ -216,35 +217,35 @@ div .mainlogo {
     margin-bottom: 10px;
 }
 
-    .tab button {
-        flex: 1;
-        background-color: var(--card-bg);
-        /* border: 1px solid var(--primary-color); */
-        border: 1px solid #ddd;
-        border-bottom: none;
-        padding: 10px 15px;
-        cursor: pointer;
-        font-family: var(--font-primary);
-        font-size: 14px;
-        color: var(--text-color);
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
+.tab button {
+    flex: 1;
+    background-color: var(--card-bg);
+    /* border: 1px solid var(--primary-color); */
+    border: 1px solid #ddd;
+    border-bottom: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-        .tab button:hover {
-            /* background-color: var(--primary-color); */
-            background-color: #bfe5fb;
-            color: white;
-            border: 1px solid #203f5e77;
-        }
+.tab button:hover {
+    /* background-color: var(--primary-color); */
+    background-color: #bfe5fb;
+    color: white;
+    border: 1px solid #203f5e77;
+}
 
-        .tab button.active {
-            /* background-color: var(--primary-color); */
-            background-color: #bfe5fb;
-            /* color: white; */
-            color: var(--text-color);
-            font-weight: 200;
-            box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
-        }
+.tab button.active {
+    /* background-color: var(--primary-color); */
+    background-color: #bfe5fb;
+    /* color: white; */
+    color: var(--text-color);
+    font-weight: 200;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+}
 
 .tabcontent {
     /* display: none;
@@ -260,9 +261,9 @@ div .mainlogo {
     border: 1px solid #ddd;
 }
 
-    .tabcontent.active {
-        display: block;
-    }
+.tabcontent.active {
+    display: block;
+}
 
 .legend-header2 {
     font-size: 18px;
@@ -311,13 +312,17 @@ div .mainlogo {
     }
 }
 
-.radio input[type=radio], .radio-inline input[type=radio], .checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] {
+.radio input[type=radio],
+.radio-inline input[type=radio],
+.checkbox input[type=checkbox],
+.checkbox-inline input[type=checkbox] {
     position: absolute;
     margin-top: 4px \9;
     margin-left: -10px;
 }
 
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
     background: white;
     color: var(--text-color);
     box-shadow: 0 5px 4px rgba(0, 0, 0, 0.50);
@@ -355,13 +360,15 @@ div .mainlogo {
 .info-panel {
     position: fixed;
     top: 0;
-    right: -400px; /* Hide the panel off-screen by default */
+    right: -400px;
+    /* Hide the panel off-screen by default */
     width: 400px;
     height: calc(100vh - 2.0em);
     background: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out;
-    z-index: 1000; /* Ensure it appears above the map */
+    z-index: 1000;
+    /* Ensure it appears above the map */
 }
 
 .pane-row {
@@ -370,21 +377,31 @@ div .mainlogo {
     /* border-bottom: 1px solid #e0e0e0; */
     margin-right: -15px;
     margin-left: -15px;
-    display: flex; /* Use Flexbox for layout */
-    justify-content: space-between; /* Space out caption and value columns */
-    align-items: center; /* Vertically align items in the center */
-    border-bottom: 1px solid #e0e0e0; /* Optional: Add a border between rows */
-    padding: 5px 0; /* Add some padding for spacing */
+    display: flex;
+    /* Use Flexbox for layout */
+    justify-content: space-between;
+    /* Space out caption and value columns */
+    align-items: center;
+    /* Vertically align items in the center */
+    border-bottom: 1px solid #e0e0e0;
+    /* Optional: Add a border between rows */
+    padding: 5px 0;
+    /* Add some padding for spacing */
 }
 
 .info-pane {
     padding: 15px;
     margin: 15px;
-    overflow-y: auto; /* Enable vertical scrolling */
-    height: calc(100% - 2.0em); /* Constrain height to viewport minus header */
-    border: 1px solid #e0e0e0; /* Optional: Add a border for better visibility */
-    background: white; /* Optional: Set a background color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    height: calc(100% - 2.0em);
+    /* Constrain height to viewport minus header */
+    border: 1px solid #e0e0e0;
+    /* Optional: Add a border for better visibility */
+    background: white;
+    /* Optional: Set a background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
 }
 
 .row .caption-column {
@@ -394,7 +411,8 @@ div .mainlogo {
     align-self: center;
     padding: 5px;
     margin: 5px;
-    flex: 1; /* Allow caption column to grow and take available space */
+    flex: 1;
+    /* Allow caption column to grow and take available space */
 }
 
 .value-column {
@@ -404,7 +422,8 @@ div .mainlogo {
     line-height: 2.3em;
     padding: 5px;
     margin: 5px;
-    flex: 2; /* Allow value column to take more space than caption */
+    flex: 2;
+    /* Allow value column to take more space than caption */
 }
 
 .right-panel-title {
@@ -418,18 +437,28 @@ div .mainlogo {
 }
 
 .infopanel-group {
-    margin-top: 2.5em; /* Small gap from the bottom */
-    margin-bottom: 2.5em; /* Small gap from the bottom */
+    margin-top: 2.5em;
+    /* Small gap from the bottom */
+    margin-bottom: 2.5em;
+    /* Small gap from the bottom */
     top: 3.5em;
     bottom: 3.5em;
-    position: fixed; /* Fix the panel group in the viewport */
-    bottom: 0; /* Position at the bottom of the viewport */
-    left: 0; /* Align to the left edge */
-    right: 0; /* Align to the right edge */
-    background: white; /* Optional: Set a background color */
-    padding: 15px; /* Add padding for spacing */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-    z-index: 1000; /* Ensure it appears above other content */
+    position: fixed;
+    /* Fix the panel group in the viewport */
+    bottom: 0;
+    /* Position at the bottom of the viewport */
+    left: 0;
+    /* Align to the left edge */
+    right: 0;
+    /* Align to the right edge */
+    background: white;
+    /* Optional: Set a background color */
+    padding: 15px;
+    /* Add padding for spacing */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a shadow for better visibility */
+    z-index: 1000;
+    /* Ensure it appears above other content */
 }
 
 @media (min-width: 992px) {
@@ -440,26 +469,37 @@ div .mainlogo {
 
 /* Ensure the parent containers have defined heights */
 .panel-collapse.in {
-    max-height: calc(70vh); /* Fill the height of the parent */
+    max-height: calc(70vh);
+    /* Fill the height of the parent */
     display: flex;
     flex-direction: column;
 }
 
 .panel-body {
-    flex: 1; /* Allow the panel body to grow and fill available space */
-    overflow: hidden; /* Prevent scrolling in the parent */
+    flex: 1;
+    /* Allow the panel body to grow and fill available space */
+    overflow: hidden;
+    /* Prevent scrolling in the parent */
 }
 
 /* Style for the #infopane */
 #infopane.panel-body.info-pane {
-    height: 100%; /* Fill the height of the parent */
-    overflow-y: auto; /* Enable vertical scrolling ONLY in #infopane */
-    padding: 15px; /* Optional: Add padding inside the pane */
-    margin: 0; /* Remove margin to fit perfectly within the parent */
-    border: 1px solid #e0e0e0; /* Optional: Add a border for better visibility */
-    background: white; /* Optional: Set a background color */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-    box-sizing: border-box; /* Include padding and border in the height calculation */
+    height: 100%;
+    /* Fill the height of the parent */
+    overflow-y: auto;
+    /* Enable vertical scrolling ONLY in #infopane */
+    padding: 15px;
+    /* Optional: Add padding inside the pane */
+    margin: 0;
+    /* Remove margin to fit perfectly within the parent */
+    border: 1px solid #e0e0e0;
+    /* Optional: Add a border for better visibility */
+    background: white;
+    /* Optional: Set a background color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+    box-sizing: border-box;
+    /* Include padding and border in the height calculation */
 }
 
 
@@ -467,7 +507,8 @@ div .mainlogo {
 
 /* Navbar Offset */
 .navbar-offset {
-    margin-top: 110px; /* Navbar height (100px) + 10px gap */
+    margin-top: 110px;
+    /* Navbar height (100px) + 10px gap */
 }
 
 /*page 1*/
@@ -475,18 +516,26 @@ div .mainlogo {
 /* Center Panel */
 .center-panel {
     position: absolute;
-    top: 110px; /* Navbar height (100px) + 10px gap */
+    top: 110px;
+    /* Navbar height (100px) + 10px gap */
     left: 10%;
     right: 10%;
     bottom: 10%;
-    width: 80%; /* 80% of the viewport width */
-    background: white; /* Card background */
-    border: 1px solid #e0e0e0; /* Border color */
-    border-radius: 4px; /* Rounded corners */
-    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40); /* Box shadow */
+    width: 80%;
+    /* 80% of the viewport width */
+    background: white;
+    /* Card background */
+    border: 1px solid #e0e0e0;
+    /* Border color */
+    border-radius: 4px;
+    /* Rounded corners */
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+    /* Box shadow */
     padding: 20px;
-    /* font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; */ /* Font */
-    color: #617592; /* Text color */
+    /* font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; */
+    /* Font */
+    color: #617592;
+    /* Text color */
 }
 
 /* Responsive Behavior for Smaller Screens */
@@ -494,7 +543,8 @@ div .mainlogo {
 
 
     body {
-        padding-top: 150px; /* Adjust based on collapsed navbar height */
+        padding-top: 150px;
+        /* Adjust based on collapsed navbar height */
     }
 
     .center-panel {
@@ -511,42 +561,53 @@ div .mainlogo {
 /* Left Panel */
 .left-panel {
     position: absolute;
-    top: 110px; /* Navbar height (100px) + 10px gap */
+    top: 110px;
+    /* Navbar height (100px) + 10px gap */
     left: 10%;
     bottom: 10%;
-    width: calc(60% - 5px); /* 2 times the size of the right panel */
+    width: calc(60% - 5px);
+    /* 2 times the size of the right panel */
     background: white;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
     padding: 20px;
-    /*  font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif;*/ /* Font */
-    color: #617592; /* Text color */
+    /*  font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif;*/
+    /* Font */
+    color: #617592;
+    /* Text color */
 }
 
 /* Right Panel */
 .right-panel {
     position: absolute;
-    top: 110px; /* Navbar height (100px) + 10px gap */
+    top: 110px;
+    /* Navbar height (100px) + 10px gap */
     right: 10%;
     bottom: 10%;
-    width: calc(20% - 5px); /* Half the size of the left panel */
+    width: calc(20% - 5px);
+    /* Half the size of the left panel */
     background: white;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
     padding: 20px;
-    /* font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; */ /* Font */
-    color: #617592; /* Text color */
+    /* font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; */
+    /* Font */
+    color: #617592;
+    /* Text color */
 }
 
 /* Responsive Behavior for Smaller Screens */
 @media (max-width: 768px) {
+
     .left-panel,
     .right-panel {
         position: static;
-        width: 90%; /* Full width on smaller screens */
-        margin: 10px auto; /* Center the panels */
+        width: 90%;
+        /* Full width on smaller screens */
+        margin: 10px auto;
+        /* Center the panels */
         top: auto;
         bottom: auto;
         left: auto;
@@ -554,11 +615,13 @@ div .mainlogo {
     }
 
     .left-panel {
-        margin-bottom: 20px; /* Add spacing between stacked panels */
+        margin-bottom: 20px;
+        /* Add spacing between stacked panels */
     }
 
     body {
-        padding-top: 150px; /* Adjust based on collapsed navbar height */
+        padding-top: 150px;
+        /* Adjust based on collapsed navbar height */
     }
 }
 
@@ -567,17 +630,21 @@ div .mainlogo {
 /* Top Panel */
 .top-panel {
     position: absolute;
-    top: 110px; /* Navbar height (100px) + 10px gap */
+    top: 110px;
+    /* Navbar height (100px) + 10px gap */
     left: 10%;
     right: 10%;
-    height: calc(60% - 5px); /* 2 times the size of the bottom panel */
+    height: calc(60% - 5px);
+    /* 2 times the size of the bottom panel */
     background: white;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
     padding: 20px;
-    font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; /* Font */
-    color: #617592; /* Text color */
+    font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif;
+    /* Font */
+    color: #617592;
+    /* Text color */
 }
 
 /* Bottom Panel */
@@ -587,24 +654,31 @@ div .mainlogo {
     bottom: 10%;
     left: 10%;
     right: 10%;
-    height: calc(20% - 5px); /* Half the size of the top panel */
+    height: calc(20% - 5px);
+    /* Half the size of the top panel */
     background: white;
     border: 1px solid #e0e0e0;
     border-radius: 4px;
     box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
     padding: 20px;
-    font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif; /* Font */
-    color: #617592; /* Text color */
+    font-family: 'Roboto Condensed', 'Inter', 'Poppins', sans-serif;
+    /* Font */
+    color: #617592;
+    /* Text color */
 }
 
 /* Responsive Behavior for Smaller Screens */
 @media (max-width: 768px) {
+
     .top-panel,
     .bottom-panel {
         position: static;
-        height: auto; /* Auto height on smaller screens */
-        width: 90%; /* Full width on smaller screens */
-        margin: 10px auto; /* Center the panels */
+        height: auto;
+        /* Auto height on smaller screens */
+        width: 90%;
+        /* Full width on smaller screens */
+        margin: 10px auto;
+        /* Center the panels */
         top: auto;
         bottom: auto;
         left: auto;
@@ -612,10 +686,50 @@ div .mainlogo {
     }
 
     .top-panel {
-        margin-bottom: 20px; /* Add spacing between stacked panels */
+        margin-bottom: 20px;
+        /* Add spacing between stacked panels */
     }
 
     body {
-        padding-top: 150px; /* Adjust based on collapsed navbar height */
+        padding-top: 150px;
+        /* Adjust based on collapsed navbar height */
     }
+}
+
+
+/* Zoom in Zoom Out */
+
+/* .leaflet-bar a, .leaflet-bar a:hover {
+    background-color: #bfe5fb;
+   
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #203f5e77;
+} */
+
+.leaflet-bar a,
+.leaflet-bar a:hover {
+    background-color: #bfe5fb;
+    /* border-bottom: 1px solid #203f5e77; */
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #203f5e77;
+    border-radius: 4px;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.40);
+}
+
+.leaflet-touch .leaflet-bar a {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
 }
